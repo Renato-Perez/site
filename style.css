@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: url(imagens/matheus-natan.jpg) center right no-repeat;
+    position: relative;
+    background-size: cover;
+    background-attachment: scroll;
+    width:100vw;
+    height: 100vh;
+    min-width: 300px;
+}
+
+main {
+    text-align: center;
+
+}
+
+.backdrop {
+    background-color:  hsla(0, 9%, 82%, 0.705)    ; 
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(2px);
+    /* background-color: #817575e6; */
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+}
+
+.content {
+    position: relative;
+    z-index: 20;
+}
+
+.logo img {
+    position: relative;
+    margin-top: 1rem;
+    width: 15rem;
+    z-index: 20;
+}
+
+.content p {
+    color: white;
+    font-size: 1.5rem;
+    padding-top: 20px;
+}
+
+.form input,
+.form button {
+    margin-top: 1rem;
+    position: relative;
+    z-index: 20;
+    display: inline-block;
+    height: 2rem;
+    text-align: center;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid rgb(199, 231, 181);
+    border-radius: 5px;
+}
+
+.form input:hover,
+.form button:hover,
+.form input:active,
+.form button:active {
+    background-color: rgb(250, 171, 250);
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+    padding: 1rem 0;
+    z-index: 20;
+    background-color: rgb(199, 231, 181);
+    width: 100vw;
+    height: 4vh;
+    color: rgb(20, 20, 20);
+}
+
+footer .copy {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    display: block;
+    font-size: .8rem;
+}
+
+footer a img {
+    position: relative;
+    width: 1.5rem;
+    vertical-align: middle;
+    display: inline-block;
+    left: 90vw;
+    bottom: 4vh;
+}
+
+@media (min-width: 555px) {
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .form input,
+    .form button {
+        margin-bottom: 3rem;
+    }
+
+    footer {
+        position: fixed;
+        margin-bottom: 0;
+    }
+
+    footer p {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+    }
+
+    footer a img {
+        position: absolute;
+        display: inline-block;
+        left: 90vw;
+        bottom: 3vh;
+    }
+}
